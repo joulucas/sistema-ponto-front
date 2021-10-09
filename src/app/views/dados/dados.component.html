@@ -1,1 +1,76 @@
-<p>dados works!</p>
+<form class="example-form">
+  <img mat-card-image src="assets/download.png" alt="Photo of a Shiba Inu">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Matricula</mat-label>
+    <input matInput disabled value="1">
+  </mat-form-field>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Sobrenome</mat-label>
+      <input matInput>
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Endereço</mat-label>
+      <textarea matInput placeholder="Ex. Rua ABC"></textarea>
+    </mat-form-field>
+
+  </p>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Cidade</mat-label>
+      <input matInput placeholder="Ex. Sao Paulo">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Estado</mat-label>
+      <input matInput placeholder="Ex. SP">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Cep</mat-label>
+      <input matInput #postalCode maxlength="5" placeholder="Ex. 38400-000">
+      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+      <td>
+        <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>
+          Email
+
+        </mat-label>
+        <input matInput placeholder="Ex. john.joe@gmail.com" disabled>
+      </mat-form-field>
+    </td>
+      <td><mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>
+          Senha
+        </mat-label>
+        <input matInput placeholder="Ex. SP">
+      </mat-form-field>
+    </td>
+
+    </tr>
+  </table>
+
+  <section>
+    <div class="example-label"></div>
+  <div>
+    <div class="example-button-row">
+      <button mat-button>Salvar</button>
+      <button mat-button color="warn">Descartar Alterações</button>
+    </div>
+  </div>
+  </section>
+
+</form>

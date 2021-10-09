@@ -6,6 +6,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +18,10 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { DadosComponent } from './views/dados/dados.component';
+import { RegistroComponent } from './views/registro/registro.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -24,7 +31,8 @@ import { DadosComponent } from './views/dados/dados.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    DadosComponent
+    DadosComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
@@ -35,8 +43,12 @@ import { DadosComponent } from './views/dados/dados.component';
     MatListModule,
     MatCardModule,
     RouterModule.forRoot([
-      {path: 'dados', component: DadosComponent}
-    ])
+      {path: 'dados', component: DadosComponent},
+      {path: 'registro', component: RegistroComponent}
+    ]),
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
