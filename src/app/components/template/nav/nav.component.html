@@ -7,6 +7,12 @@
                 </i>
                     Inicio
             </a>
+            <a mat-list-item routerLink= "/dados">
+              <i class="material-icons">
+                  person
+              </i>
+                  Meus Dados
+          </a>
             <a mat-list-item>
                 <i class="material-icons">
                     today
@@ -27,4 +33,7 @@
             </a>
         </mat-nav-list>
     </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
 </mat-sidenav-container>
