@@ -12,6 +12,6 @@ export class AppComponent implements OnInit {
   constructor(private titleService: Title){}
 
   ngOnInit(){
-    this.titleService.setTitle("Sistema de Marcacao")
+    this.titleService.setTitle("Sistema de Marcação")
   }
 }
